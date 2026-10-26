@@ -1,0 +1,157 @@
+{
+  "timestamp": "2026-10-26T18:03:13.757673Z",
+  "system": "Apple Cellular Validation Automated Triage Assistant",
+  "evaluation_metrics": {
+    "total_logs": 1400,
+    "ml_accuracy": 1.0,
+    "weighted_f1": 1.0,
+    "cv_f1_mean": 1.0,
+    "cv_f1_std": 0.0,
+    "rule_based_accuracy": 0.8428571428571429,
+    "accuracy_gain": 15.714285714285714,
+    "latency_ms": 0.3707345004659146
+  },
+  "total_logs_analyzed": 50,
+  "triage_summary": [
+    {
+      "log_id": 471,
+      "log_message": "[L3_RRC][ERROR] RRCSetupRequest rejected by network: waitTime=58s, cause=congestion. Test suite TS_38_521_426 aborted.",
+      "predicted_label": "RRC_SETUP_REJECT",
+      "actual_label": "RRC_SETUP_REJECT",
+      "root_cause_summary": "Radio Resource Control establishment rejected due to PLMN cell congestion or cell barring."
+    },
+    {
+      "log_id": 854,
+      "log_message": "[L2_HARQ][CRITICAL] Maximum HARQ retransmissions (max_retx=4",
+      "predicted_label": "HARQ_RETX_EXHAUSTION",
+      "actual_label": "HARQ_RETX_EXHAUSTION",
+      "root_cause_summary": "Severe channel fading inducing continuous NACK responses on PDSCH/PUSCH transport blocks."
+    },
+    {
+      "log_id": 872,
+      "log_message": "[L2_HARQ][CRITICAL] Maximum HARQ retransmissions (max_retx=4) exceeded on PDSCH process ID 14. NACK count=12.",
+      "predicted_label": "HARQ_RETX_EXHAUSTION",
+      "actual_label": "HARQ_RETX_EXHAUSTION",
+      "root_cause_summary": "Severe channel fading inducing continuous NACK responses on PDSCH/PUSCH transport blocks."
+    },
+    {
+      "log_id": 375,
+      "log_message": "[PHY_RF][WARN] PRACH preamble transmission dropped by modem. RF front-end power back-off triggered (thermal 88 C).",
+      "predicted_label": "RACH_PREAMBLE_FAIL",
+      "actual_label": "RACH_PREAMBLE_FAIL",
+      "root_cause_summary": "Modem transmit power ramp limit reached without gNB preamble acknowledgement (RAR)."
+    },
+    {
+      "log_id": 1365,
+      "log_message": "[BASEBAND_EXEC][PASS] Automated test sequence completed with zero assertions. Telemetry within nominal operating bounds.",
+      "predicted_label": "VALIDATION_PASS",
+      "actual_label": "VALIDATION_PASS",
+      "root_cause_summary": "Test case completed with zero assertions. BLER, EVM, and throughput within 3GPP margin."
+    },
+    {
+      "log_id": 928,
+      "log_message": "[L2_HARQ][CRITICAL] Maximum HARQ retransmissions (max_retx=4) exceeded on PDSCH process ID 10. NACK count=15.",
+      "predicted_label": "HARQ_RETX_EXHAUSTION",
+      "actual_label": "HARQ_RETX_EXHAUSTION",
+      "root_cause_summary": "Severe channel fading inducing continuous NACK responses on PDSCH/PUSCH transport blocks."
+    },
+    {
+      "log_id": 585,
+      "log_message": "[L3_RRC][ERROR] RRCSetupRequest rejected by network: waitTime=39s, cause=congestion. Test suite TS_38_521_113 aborted.",
+      "predicted_label": "RRC_SETUP_REJECT",
+      "actual_label": "RRC_SETUP_REJECT",
+      "root_cause_summary": "Radio Resource Control establishment rejected due to PLMN cell congestion or cell barring."
+    },
+    {
+      "log_id": 321,
+      "log_message": "[BASEBAND_MAC] Random Access Channel contention resolution timer expired (T300=400ms). Preamble index=46 unack.",
+      "predicted_label": "RACH_PREAMBLE_FAIL",
+      "actual_label": "RACH_PREAMBLE_FAIL",
+      "root_cause_summary": "Modem transmit power ramp limit reached without gNB preamble acknowledgement (RAR)."
+    },
+    {
+      "log_id": 130,
+      "log_message": "[MODEM_PHY][ERROR] Primary Sync Signal (PSS) acquisition failed on Band n7. Doppler shift 1100 Hz exceeds AFC loop limit. Carrier frequency 2140 MHz lock ok.",
+      "predicted_label": "PHY_SYNC_LOSS",
+      "actual_label": "PHY_SYNC_LOSS",
+      "root_cause_summary": "Doppler shift exceeding AFC loop limits or low SNR below sensitivity floor."
+    },
+    {
+      "log_id": 16,
+      "log_message": "[MODEM_PHY][ERROR] Primary Sync Signal (PSS) acquisition failed on Band n3. Doppler shift 375 Hz exceeds AFC loop limit.",
+      "predicted_label": "PHY_SYNC_LOSS",
+      "actual_label": "PHY_SYNC_LOSS",
+      "root_cause_summary": "Doppler shift exceeding AFC loop limits or low SNR below sensitivity floor."
+    },
+    {
+      "log_id": 411,
+      "log_message": "[L3_RRC][ERROR] RRCSetupRequest rejected by network: waitTime=17s, cause=congestion. Test suite TS_38_521_684 aborted. Diagnostic timestamp 1718928000.",
+      "predicted_label": "RRC_SETUP_REJECT",
+      "actual_label": "RRC_SETUP_REJECT",
+      "root_cause_summary": "Radio Resource Control establishment rejected due to PLMN cell congestion or cell barring."
+    },
+    {
+      "log_id": 402,
+      "log_message": "[RRC_CONN] Radio Resource Control setup failure: Cell barring active on EARFCN 46025. SIB1 indicates barred PLMN 310-410.",
+      "predicted_label": "RRC_SETUP_REJECT",
+      "actual_label": "RRC_SETUP_REJECT",
+      "root_cause_summary": "Radio Resource Control establishment rejected due to PLMN cell congestion or cell barring."
+    },
+    {
+      "log_id": 1266,
+      "log_message": "[AUTO_HARNESS][INFO] 3GPP RF conformance pass: Band n1, Channel 3500 MHz",
+      "predicted_label": "VALIDATION_PASS",
+      "actual_label": "VALIDATION_PASS",
+      "root_cause_summary": "Test case completed with zero assertions. BLER, EVM, and throughput within 3GPP margin."
+    },
+    {
+      "log_id": 1028,
+      "log_message": "[TEST_INFRA] Modem daemon failed to acknowledge ping over PCIe. AT command channel in deadlocked state.",
+      "predicted_label": "AT_CMD_TIMEOUT",
+      "actual_label": "AT_CMD_TIMEOUT",
+      "root_cause_summary": "Baseband modem control interface deadlock or serial UART buffer overrun."
+    },
+    {
+      "log_id": 4,
+      "log_message": "[CELL_SEARCH][CRITICAL] Secondary Sync Signal (SSS) detection error: SNR=-10.8 dB below floor. Subcarrier spacing 15 kHz.",
+      "predicted_label": "PHY_SYNC_LOSS",
+      "actual_label": "PHY_SYNC_LOSS",
+      "root_cause_summary": "Doppler shift exceeding AFC loop limits or low SNR below sensitivity floor."
+    },
+    {
+      "log_id": 851,
+      "log_message": "[L2_MAC] Transport Block discard: HARQ buffer overflow on process 0. MCS=23, RV sequence exhausted.",
+      "predicted_label": "HARQ_RETX_EXHAUSTION",
+      "actual_label": "HARQ_RETX_EXHAUSTION",
+      "root_cause_summary": "Severe channel fading inducing continuous NACK responses on PDSCH/PUSCH transport blocks."
+    },
+    {
+      "log_id": 1308,
+      "log_message": "[BASEBAND_EXEC][PASS] Automated test sequence completed with zero assertions. Telemetry within nominal operating bounds.",
+      "predicted_label": "VALIDATION_PASS",
+      "actual_label": "VALIDATION_PASS",
+      "root_cause_summary": "Test case completed with zero assertions. BLER, EVM, and throughput within 3GPP margin."
+    },
+    {
+      "log_id": 1303,
+      "log_message": "[BASEBAND_EXEC][PASS] Automated test sequence completed with zero assertions. Telemetry within nominal operating bounds. Diagnostic timestamp 1718928000.",
+      "predicted_label": "VALIDATION_PASS",
+      "actual_label": "VALIDATION_PASS",
+      "root_cause_summary": "Test case completed with zero assertions. BLER, EVM, and throughput within 3GPP margin."
+    },
+    {
+      "log_id": 544,
+      "log_message": "[L3_RRC][ERROR] RRCSetupRequest rejected by network: waitTime=45s, cause=congestion. Test suite TS_38_521_795 aborted.",
+      "predicted_label": "RRC_SETUP_REJECT",
+      "actual_label": "RRC_SETUP_REJECT",
+      "root_cause_summary": "Radio Resource Control establishment rejected due to PLMN cell congestion or cell barring."
+    },
+    {
+      "log_id": 718,
+      "log_message": "[INSTRUMENT_CHECK] VSA measurement failure: Constellation Error Vector Magnitude = 12.36% RMS. IQ imbalance at 2100 MHz. Carrier frequency 2140 MHz lock ok.",
+      "predicted_label": "RF_EVM_DEGRADATION",
+      "actual_label": "RF_EVM_DEGRADATION",
+      "root_cause_summary": "Power Amplifier (PA) compression/non-linearity causing constellation distortion & spectral regrowth."
+    }
+  ]
+}
